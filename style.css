@@ -49,3 +49,21 @@ body {
 .big-button:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row on mobile */
+        max-width: 90%;
+        /* Make the grid fit the screen better */
+        gap: 8px;
+    }
+
+    .big-button {
+        font-size: 12px;
+        /* Shrink text for smaller screens */
+        height: 80px;
+        /* Slightly smaller button height */
+        padding: 8px;
+    }
+}
